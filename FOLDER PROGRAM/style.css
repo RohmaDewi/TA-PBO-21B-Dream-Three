@@ -131,7 +131,7 @@
                        font-weight: 600;
                       
 
-                       color: rgb(47, 141, 70);
+                       color: #4BA0B5;
                       
 
                        }
@@ -785,7 +785,7 @@
                        .report-container {
                       
 
-                       min-height: 150px;
+                       min-height: 100px;
                       
 
                        max-width: 1200px;
@@ -830,7 +830,7 @@
                        padding: 20px 20px 10px 20px;
                       
 
-                       border-bottom: 2px solid rgba(0, 20, 151, 0.59);
+                       border-bottom: 2px solid #4BA0B5;
                       
 
                        }
@@ -869,7 +869,7 @@
                        border-radius: 8px;
                       
 
-                       background-color: #5500cb;
+                       background-color: white ;
                       
 
                        color: white;
@@ -993,7 +993,7 @@
                        text-align: center;
                       
 
-                       background-color: rgb(0, 177, 0);
+                       background-color: #4BA0B5;
                       
 
                        color: white;
