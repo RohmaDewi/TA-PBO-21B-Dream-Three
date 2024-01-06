@@ -1,8 +1,8 @@
 .warna-biru{
-    background-color: #2699FB;
+    background-color: #4BA0B5;
 }
 .text-biru{
-    color: #2699FB;
+    color: #4BA0B5;
 }
 .text-biru::-webkit-input-placeholder{
 	color: #C5E5FD;
@@ -46,6 +46,7 @@
     width: 10em;   
 }
 .awal-kelas{
-    color: rgb(10, 141, 255);
+    color: #4BA0B5;
     font-weight: bold;
+
 }
