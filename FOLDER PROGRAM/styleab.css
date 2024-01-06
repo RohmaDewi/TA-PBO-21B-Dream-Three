@@ -27,7 +27,7 @@
 
 a {
 	text-decoration: none;
-	color: black;
+	color: white ;
 }
 
 .navbar, .btn {
@@ -44,5 +44,5 @@ a {
 }
 
 .bi-github {
-	color: black;
+	color: white;
 }

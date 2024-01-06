@@ -200,7 +200,7 @@
                        .logosec {
                       
 
-                       gap: 60px;
+                       gap: 10px;
                       
 
                        }
@@ -900,6 +900,8 @@
                       
 
                        padding: 20px;
+
+                       
                       
 
                        }
@@ -921,6 +923,9 @@
                       
 
                        align-items: center;
+
+                       
+                       
                       
 
                        }
@@ -933,6 +938,7 @@
                       
 
                        letter-spacing: 0px;
+                       
                       
 
                        }
@@ -948,6 +954,8 @@
                       
 
                        margin-top: 15px;
+
+                       
                       
 
                        }
