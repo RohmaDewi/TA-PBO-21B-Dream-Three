@@ -1,0 +1,454 @@
+/* //////////////////////General//////////////////////////// */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+}
+
+/* //////////////////////////Keyframes///////////////////////////////////////// */
+
+@keyframes shine {
+    0% {filter: brightness(1);}
+    50% {filter: brightness(1.5);}
+    100% {filter: brightness(1.25);}
+}
+
+@keyframes shineSettingsLight {
+    0% {filter: brightness(1);}
+    50% {filter: brightness(.75);}
+    100% {filter: brightness(.9);}
+}
+
+@keyframes shineSettingsDark {
+    0% {filter: brightness(1);}
+    50% {filter: brightness(1.5);}
+    100% {filter: brightness(1.25);}
+}
+
+/*/////////////////////////////// Themes & Transitions/////////////////////////////////////*/
+
+div,
+button{
+    font-size: 16px;
+
+    color: #000;
+}
+
+h2{
+    font-weight: normal;
+    
+}
+
+
+svg.settinhs-icon path{
+    transition: fill 500ms;
+    fill: #000
+}
+
+svg.cirlce circle,
+svg.path path,
+svg.path g,
+svg{
+    transition: fill 500ms;
+    fill:#000;
+}
+
+svg.Stroke g,
+svg.pathStroke{
+    transition: stroke 500ms;
+    stroke: #000;
+}
+
+
+div.content-left,
+div.content-right,
+button.option-button{
+    transition: 500ms;
+}
+
+div.settings .settings-options-box .settings-options,
+div.Personalization-box{
+    transition: background-color 500ms;
+}
+
+button.clicked,
+.button-switch-color{
+    transition: background-color 500ms;
+    
+}
+
+label.labelCheckbox{
+    transition: border 500ms;
+}
+
+div.ball{
+    transition: 500ms;
+}
+
+
+/* ////////////////////Dark Theme ////////////////////////////////*/
+
+section.dark svg.settinhs-icon path{
+    transition: fill 500ms;
+    fill: #d2d2d2;
+}
+
+section.dark svg.cirlce circle,
+section.dark svg.path path,
+section.dark svg.path g,
+section.dark svg,
+section.dark svg{
+    transition: fill 500ms;
+    fill:#fff;
+}
+
+section.dark svg.Stroke g,
+section.dark svg.pathStroke{
+    transition: stroke 500ms;
+    stroke: #fff;
+}
+
+section.dark div,
+section.dark button,
+section.dark h2{
+    color: #fff;
+}
+
+section.dark div.content-left,
+section.dark div.content-right,
+section.dark button.option-button{
+    transition: background-color 500ms;
+    background-color: #1f1f1f;
+}
+
+section.dark div.settings .settings-options-box .settings-options,
+section.dark div.Personalization-box{
+    transition: background-color 500ms;
+    background-color: #2a2a2a; 
+}
+
+section.dark button.clicked,
+section.dark .button-switch-color{
+    transition: background-color 500ms;
+    background-color: #3f3d3d;
+    
+}
+
+section.dark label.labelCheckbox{
+    transition: border 500ms;
+    border: 2px solid #fafafa;
+}
+
+section.dark div.ball{
+    transition: 500ms;
+    background-color: #fafafa;
+}
+
+
+/* //////////////////////////////section main////////////////////////////////// */
+
+section.content-main{
+    height: 100vh;
+    width: 100vw;
+    
+    display: flex;
+}
+
+div.content-left,
+div.content-right{
+    height: 100%;
+}
+
+/* ////////////////////////////left section/////////////////////////////////// */
+
+div.content-left{
+    width: 20%;
+    padding-top: 2rem; 
+    
+    background-color: #dadada;
+    border-right:1.9px solid #3f3d3d;
+}
+
+/*///////////////////////////// Profile ///////////////////////////////////////*/
+
+div.content-left .profile-box{
+    display: flex;
+    align-items: center;
+    padding: 1rem 0 2rem 3rem;
+} 
+
+.profile-box .profile-svg svg,
+.profile-box .profile-picture img{
+    height: 1.5rem;
+}
+
+.profile-box .profile-picture img{
+    margin: 0 .5rem 0 .5rem;
+    
+    border-radius: 50%;
+}
+
+/*////////////////////////////// Opitions list //////////////////////////////////*/
+
+div.option,
+span.indicator{
+    height: 2.25rem;
+}
+
+button.option-button{
+    height: 100%;
+    width: 100%;
+    border: none;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    padding-left: 3rem;
+
+    cursor: pointer;
+    background-color: #dadada;
+}
+
+/* /////////////////////////Css Javacript options list ///////////////////////////*/
+
+/*////////////////////////// background after click //////////////////////////////*/
+
+button.clicked{
+    background-color: #fafafa ;
+}
+
+section button.option-button:hover {
+    animation: shine 2s !important;
+    filter: brightness(1.25);
+}
+
+/*//////////////////////////////// Indicator ////////////////////////////////////////*/
+
+.indicator{
+    width: 7px;
+}
+
+/*/////////////////////////////// Personalization ///////////////////////////////////*/
+div.Personalization-box{
+    padding: .5rem;
+    margin: 1rem;
+    
+    border-radius: 10px;
+    
+    background-color: #fafafa;
+}
+
+.transition,
+.Switch-theme{
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+
+    margin: .4rem 0;
+    padding: 0 .5rem;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+div.Personalization-box .Switch-color{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+button.button-switch-color{
+    margin-top: 1rem;
+    width: 80%;
+    height: 2rem;
+    border-radius: 32px;
+    cursor: pointer;
+
+    transition: 200ms;
+
+    border: 3px solid #fff;
+}
+
+button.button-switch-color:hover,
+button.on{
+    filter: brightness(1.5);
+}
+
+input.checkbox-style{
+    position: absolute;
+    left: 13rem; 
+    width: 30px; 
+    opacity: 0; 
+}
+
+label.labelCheckbox{
+    height: 12px;
+    width: 30px;
+    position: relative;
+    
+    border-radius: 12px;
+    cursor: pointer;
+    
+    border: 2px solid #000;
+}
+
+div.ball {
+    height: 8px;
+    width: 8px;
+
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    
+    background-color: #000;
+    border-radius: 50%;
+
+    transition: left .5s;
+}
+/*///////////////// css javascript .ball//////////////// */
+
+div.checkboxOn .ballOn{
+    left: 20px;
+}
+
+/* section.dark label.labelCheckboxDark{
+    background-color: purple;
+    box-shadow: 0 0 10px purple;
+} */
+
+/*////////////////////////////// right section //////////////////////////////////////*/
+
+div.content-right{
+    position: relative;
+    width: 80%;
+
+    background-color: #dadada;
+}
+
+
+div.settings{
+    padding: 3rem 0 0 2rem;  
+    width: 70%;
+    position: absolute;   
+    
+}
+
+/* /////////////////////////Animations in and out ///////////////////////////*/
+div.hidden{
+    opacity: 0;
+}
+
+div.show{
+    opacity: 1;
+}
+
+section.UpDown div.hidden{
+    transition: 1000ms !important;
+    top: -150% !important;
+}
+
+section.UpDown div.show{
+    transition: 1000ms !important;
+    top: 0 !important;
+}
+
+section.SeeYou div.hidden{
+    transition: 500ms !important;
+    opacity: 0 !important;
+}
+
+section.SeeYou div.show{
+    transition: 500ms 500ms !important;
+    opacity: 1 !important;
+}
+
+section.LeftRight div.hidden{
+    transition: 1000ms !important;
+    left: 150% !important;
+    opacity: 0 !important;
+}
+
+section.LeftRight div.show{
+    transition: 1000ms !important;
+    left:0 !important;
+    opacity: 1 !important;
+}
+/*///////////////////////////////// Title //////////////////////////////////////////////*/
+
+div.settings .Title {
+    margin-bottom: 2rem;
+    font-size: 20px;
+}
+
+/*///////////////////////////////// Box settings //////////////////////////////////*/
+
+div.settings .settings-options-box{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: .5rem;
+}
+
+div.settings .settings-options-box .settings-options svg{
+    height: 2rem;
+    padding:0 1rem 0 1.5rem;
+}
+
+div.settings .settings-options-box .settings-options{
+    height: 5rem;
+    margin: 6px;
+    padding: 5px;
+
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 5px;
+
+    background-color: #fafafa;
+}
+
+div.settings .settings-options-box .settings-options:hover{
+    border-radius: 10px;
+    margin: 0;
+    
+    animation: shineSettingsLight 2000ms;
+    filter: brightness(.9);
+
+    border:solid 3px #fff;
+}
+
+section.dark div.settings .settings-options-box .settings-options:hover{
+    border-radius: 10px;
+    margin: 0;
+    
+    animation: shineSettingsDark 2000ms;
+    filter: brightness(1.25);
+
+    border:solid 3px #fff;
+}
+
+div.colors-box{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    gap: .5rem;
+
+    padding-right: 12.5rem;
+    margin-top: 1.5rem;
+
+}
+
+.buttonColor{
+    height: 110px;
+    width: 110px;
+    border-radius: 5px;
+    margin:6px;
+    cursor: pointer;
+}
+
+.buttonColor:hover{
+    margin: 0;
+}
