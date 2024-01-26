@@ -339,4 +339,22 @@ $('#tombolHapusData').on('click',function(){
       alert(`Nama Mahasiswa : ${txt_nama.value}`);
   }
   
-  
+       //  buat arrow function agar isi data hanya dapat diisi huruf dan spasi
+       const keyText = (event) => {
+        if (
+          (event.key >= "a" && event.key <= "z") ||
+          (event.key >= "A" && event.key <= "Z") ||
+          event.which == 32 || event.key == "."
+        ) {
+          return true;
+        } else {
+          return false;
+        }
+        id ="nama"
+      };
+      // buat event "keypress" (kejadian saat menekan dan menahan tombol tertentu)
+      // panggil fungsi "keyText" agar "txt_nama" hanya dapat diisi huruf dan spasi
+      nama.addEventListener(
+        "keypress",
+        (event) => (event.returnValue = keyText(event))
+      );
