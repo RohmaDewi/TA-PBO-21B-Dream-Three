@@ -47,19 +47,19 @@
                        --background-color4: #cad7fda4;
                       
 
-                       --primary-color: #4b49ac;
+                       --primary-color: #4BA0B5;
                       
 
-                       --secondary-color: #0c007d;
+                       --secondary-color: #4BA0B5;
                       
 
-                       --Border-color: #3f0097;
+                       --Border-color: #4BA0B5;
                       
 
-                       --one-use-color: #3f0097;
+                       --one-use-color: #4BA0B5;
                       
 
-                       --two-use-color: #5500cb;
+                       --two-use-color: #4BA0B5;
                       
 
                        }
@@ -407,7 +407,7 @@
                        background-image: 
                       
 
-                       		linear-gradient(to bottom, rgb(0, 0, 85), rgb(0, 0, 50));
+                       		linear-gradient(to bottom, #4BA0B5(0, 0, 85),#4BA0B5(0, 0, 50));
                       
 
                        }

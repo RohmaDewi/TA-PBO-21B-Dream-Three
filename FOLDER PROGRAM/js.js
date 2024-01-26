@@ -230,6 +230,7 @@ $('#simpan-putnya').on('click',function(){
             }
             
     })
+    
 
     // $.put = function(){
  
@@ -349,3 +350,18 @@ function darkmode(isDark)
 		// localStorage.setItem('theme', '');
 	}
 }
+  // jika "txt_nama" tidak di isi
+  if(txt_nama.value =="")
+  {
+      alert("Nama Mahasiswa Wajib Diisi !")
+  }
+  // jika "txt_nama" diisi
+  else
+  {
+      //tampilkan alert
+      alert(`Nama Mahasiswa : ${txt_nama.value}`);
+  }
+  
+  
+  
+  })
