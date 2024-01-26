@@ -312,44 +312,8 @@ $('#tombolHapusData').on('click',function(){
   
 })
 
-// $('#tombol-hapus').on('click', function(){
-//     $.ajax({
-//         url: "http://localhost/latihan/rest-server/api/mahasiswa",
-//         type: "delete",
-//         dataType: "json",
-//         data: {
-//             'key':'data123',
-//             'id': $('#kode-id').html()
-//         },
-//         success: function(isi){
-//         console.log(isi);
-//         }
-//     }); 
-// })
 
-var formAb = document.querySelector(".form-absensi");
-var footerD = document.querySelector('.footerD');
 
-// if(localStorage.getItem('theme') == 'tDark')
-// 	darkmode(true)
-
-function darkmode(isDark) 
-{
-	if (isDark) {
-		document.body.setAttribute('id','dark');
-		formAb.classList.remove("shadow-lg");
-		formAb.setAttribute('id', 'bshadow');
-		footerD.classList.toggle('d-none');
-		// localStorage.setItem('theme', 'tDark');
-	}
-	else {
-		document.body.setAttribute('id', '');
-		formAb.classList.add("shadow-lg");
-		formAb.setAttribute('id', '');
-		footerD.classList.toggle('d-none');
-		// localStorage.setItem('theme', '');
-	}
-}
   // jika "txt_nama" tidak di isi
   if(txt_nama.value =="")
   {
@@ -363,5 +327,3 @@ function darkmode(isDark)
   }
   
   
-  
-  })
