@@ -312,7 +312,20 @@ $('#tombolHapusData').on('click',function(){
   
 })
 
-
+// $('#tombol-hapus').on('click', function(){
+//     $.ajax({
+//         url: "http://localhost/latihan/rest-server/api/mahasiswa",
+//         type: "delete",
+//         dataType: "json",
+//         data: {
+//             'key':'data123',
+//             'id': $('#kode-id').html()
+//         },
+//         success: function(isi){
+//         console.log(isi);
+//         }
+//     }); 
+// })
 
   // jika "txt_nama" tidak di isi
   if(txt_nama.value =="")
